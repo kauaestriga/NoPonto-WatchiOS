@@ -1,0 +1,622 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACF9C9D6254B7C1400825C4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9C9D5254B7C1400825C4D /* AppDelegate.swift */; };
+		ACF9C9D8254B7C1400825C4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9C9D7254B7C1400825C4D /* SceneDelegate.swift */; };
+		ACF9C9DA254B7C1400825C4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9C9D9254B7C1400825C4D /* ViewController.swift */; };
+		ACF9C9DD254B7C1400825C4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF9C9DB254B7C1400825C4D /* Main.storyboard */; };
+		ACF9C9DF254B7C1A00825C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF9C9DE254B7C1A00825C4D /* Assets.xcassets */; };
+		ACF9C9E2254B7C1A00825C4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF9C9E0254B7C1A00825C4D /* LaunchScreen.storyboard */; };
+		ACF9C9E7254B7C1A00825C4D /* NoPonto WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ACF9C9E6254B7C1A00825C4D /* NoPonto WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACF9C9ED254B7C1A00825C4D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF9C9EB254B7C1A00825C4D /* Interface.storyboard */; };
+		ACF9C9EF254B7C1B00825C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF9C9EE254B7C1B00825C4D /* Assets.xcassets */; };
+		ACF9C9F6254B7C1B00825C4D /* NoPonto WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ACF9C9F5254B7C1B00825C4D /* NoPonto WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ACF9C9FB254B7C1B00825C4D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9C9FA254B7C1B00825C4D /* InterfaceController.swift */; };
+		ACF9C9FD254B7C1B00825C4D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9C9FC254B7C1B00825C4D /* ExtensionDelegate.swift */; };
+		ACF9C9FF254B7C1C00825C4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF9C9FE254B7C1C00825C4D /* Assets.xcassets */; };
+		ACF9CA0F254B897D00825C4D /* MeatTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF9CA0E254B897D00825C4D /* MeatTemperature.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ACF9C9E8254B7C1A00825C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF9C9CA254B7C1400825C4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF9C9E5254B7C1A00825C4D;
+			remoteInfo = "NoPonto WatchKit App";
+		};
+		ACF9C9F7254B7C1B00825C4D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF9C9CA254B7C1400825C4D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACF9C9F4254B7C1B00825C4D;
+			remoteInfo = "NoPonto WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ACF9CA06254B7C1C00825C4D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ACF9C9F6254B7C1B00825C4D /* NoPonto WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF9CA0A254B7C1C00825C4D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ACF9C9E7254B7C1A00825C4D /* NoPonto WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ACF9C9D2254B7C1400825C4D /* NoPonto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoPonto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF9C9D5254B7C1400825C4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ACF9C9D7254B7C1400825C4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		ACF9C9D9254B7C1400825C4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ACF9C9DC254B7C1400825C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ACF9C9DE254B7C1A00825C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACF9C9E1254B7C1A00825C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ACF9C9E3254B7C1A00825C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF9C9E6254B7C1A00825C4D /* NoPonto WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NoPonto WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF9C9EC254B7C1A00825C4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ACF9C9EE254B7C1B00825C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACF9C9F0254B7C1B00825C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF9C9F5254B7C1B00825C4D /* NoPonto WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "NoPonto WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF9C9FA254B7C1B00825C4D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		ACF9C9FC254B7C1B00825C4D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ACF9C9FE254B7C1C00825C4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ACF9CA00254B7C1C00825C4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF9CA0E254B897D00825C4D /* MeatTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeatTemperature.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ACF9C9CF254B7C1400825C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF9C9F2254B7C1B00825C4D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ACF9C9C9254B7C1400825C4D = {
+			isa = PBXGroup;
+			children = (
+				ACF9C9D4254B7C1400825C4D /* NoPonto */,
+				ACF9C9EA254B7C1A00825C4D /* NoPonto WatchKit App */,
+				ACF9C9F9254B7C1B00825C4D /* NoPonto WatchKit Extension */,
+				ACF9C9D3254B7C1400825C4D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ACF9C9D3254B7C1400825C4D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ACF9C9D2254B7C1400825C4D /* NoPonto.app */,
+				ACF9C9E6254B7C1A00825C4D /* NoPonto WatchKit App.app */,
+				ACF9C9F5254B7C1B00825C4D /* NoPonto WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ACF9C9D4254B7C1400825C4D /* NoPonto */ = {
+			isa = PBXGroup;
+			children = (
+				ACF9C9D5254B7C1400825C4D /* AppDelegate.swift */,
+				ACF9C9D7254B7C1400825C4D /* SceneDelegate.swift */,
+				ACF9C9D9254B7C1400825C4D /* ViewController.swift */,
+				ACF9C9DB254B7C1400825C4D /* Main.storyboard */,
+				ACF9C9DE254B7C1A00825C4D /* Assets.xcassets */,
+				ACF9C9E0254B7C1A00825C4D /* LaunchScreen.storyboard */,
+				ACF9C9E3254B7C1A00825C4D /* Info.plist */,
+			);
+			path = NoPonto;
+			sourceTree = "<group>";
+		};
+		ACF9C9EA254B7C1A00825C4D /* NoPonto WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				ACF9C9EB254B7C1A00825C4D /* Interface.storyboard */,
+				ACF9C9EE254B7C1B00825C4D /* Assets.xcassets */,
+				ACF9C9F0254B7C1B00825C4D /* Info.plist */,
+			);
+			path = "NoPonto WatchKit App";
+			sourceTree = "<group>";
+		};
+		ACF9C9F9254B7C1B00825C4D /* NoPonto WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ACF9C9FA254B7C1B00825C4D /* InterfaceController.swift */,
+				ACF9C9FC254B7C1B00825C4D /* ExtensionDelegate.swift */,
+				ACF9C9FE254B7C1C00825C4D /* Assets.xcassets */,
+				ACF9CA00254B7C1C00825C4D /* Info.plist */,
+				ACF9CA0E254B897D00825C4D /* MeatTemperature.swift */,
+			);
+			path = "NoPonto WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ACF9C9D1254B7C1400825C4D /* NoPonto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF9CA0B254B7C1C00825C4D /* Build configuration list for PBXNativeTarget "NoPonto" */;
+			buildPhases = (
+				ACF9C9CE254B7C1400825C4D /* Sources */,
+				ACF9C9CF254B7C1400825C4D /* Frameworks */,
+				ACF9C9D0254B7C1400825C4D /* Resources */,
+				ACF9CA0A254B7C1C00825C4D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACF9C9E9254B7C1A00825C4D /* PBXTargetDependency */,
+			);
+			name = NoPonto;
+			productName = NoPonto;
+			productReference = ACF9C9D2254B7C1400825C4D /* NoPonto.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ACF9C9E5254B7C1A00825C4D /* NoPonto WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF9CA07254B7C1C00825C4D /* Build configuration list for PBXNativeTarget "NoPonto WatchKit App" */;
+			buildPhases = (
+				ACF9C9E4254B7C1A00825C4D /* Resources */,
+				ACF9CA06254B7C1C00825C4D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ACF9C9F8254B7C1B00825C4D /* PBXTargetDependency */,
+			);
+			name = "NoPonto WatchKit App";
+			productName = "NoPonto WatchKit App";
+			productReference = ACF9C9E6254B7C1A00825C4D /* NoPonto WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ACF9C9F4254B7C1B00825C4D /* NoPonto WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ACF9CA03254B7C1C00825C4D /* Build configuration list for PBXNativeTarget "NoPonto WatchKit Extension" */;
+			buildPhases = (
+				ACF9C9F1254B7C1B00825C4D /* Sources */,
+				ACF9C9F2254B7C1B00825C4D /* Frameworks */,
+				ACF9C9F3254B7C1B00825C4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "NoPonto WatchKit Extension";
+			productName = "NoPonto WatchKit Extension";
+			productReference = ACF9C9F5254B7C1B00825C4D /* NoPonto WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ACF9C9CA254B7C1400825C4D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Kauã Estriga";
+				TargetAttributes = {
+					ACF9C9D1254B7C1400825C4D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					ACF9C9E5254B7C1A00825C4D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					ACF9C9F4254B7C1B00825C4D = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = ACF9C9CD254B7C1400825C4D /* Build configuration list for PBXProject "NoPonto" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ACF9C9C9254B7C1400825C4D;
+			productRefGroup = ACF9C9D3254B7C1400825C4D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ACF9C9D1254B7C1400825C4D /* NoPonto */,
+				ACF9C9E5254B7C1A00825C4D /* NoPonto WatchKit App */,
+				ACF9C9F4254B7C1B00825C4D /* NoPonto WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ACF9C9D0254B7C1400825C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF9C9E2254B7C1A00825C4D /* LaunchScreen.storyboard in Resources */,
+				ACF9C9DF254B7C1A00825C4D /* Assets.xcassets in Resources */,
+				ACF9C9DD254B7C1400825C4D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF9C9E4254B7C1A00825C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF9C9EF254B7C1B00825C4D /* Assets.xcassets in Resources */,
+				ACF9C9ED254B7C1A00825C4D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF9C9F3254B7C1B00825C4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF9C9FF254B7C1C00825C4D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ACF9C9CE254B7C1400825C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF9C9DA254B7C1400825C4D /* ViewController.swift in Sources */,
+				ACF9C9D6254B7C1400825C4D /* AppDelegate.swift in Sources */,
+				ACF9C9D8254B7C1400825C4D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ACF9C9F1254B7C1B00825C4D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACF9C9FD254B7C1B00825C4D /* ExtensionDelegate.swift in Sources */,
+				ACF9C9FB254B7C1B00825C4D /* InterfaceController.swift in Sources */,
+				ACF9CA0F254B897D00825C4D /* MeatTemperature.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ACF9C9E9254B7C1A00825C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACF9C9E5254B7C1A00825C4D /* NoPonto WatchKit App */;
+			targetProxy = ACF9C9E8254B7C1A00825C4D /* PBXContainerItemProxy */;
+		};
+		ACF9C9F8254B7C1B00825C4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ACF9C9F4254B7C1B00825C4D /* NoPonto WatchKit Extension */;
+			targetProxy = ACF9C9F7254B7C1B00825C4D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ACF9C9DB254B7C1400825C4D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACF9C9DC254B7C1400825C4D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ACF9C9E0254B7C1A00825C4D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACF9C9E1254B7C1A00825C4D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		ACF9C9EB254B7C1A00825C4D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ACF9C9EC254B7C1A00825C4D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ACF9CA01254B7C1C00825C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ACF9CA02254B7C1C00825C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ACF9CA04254B7C1C00825C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NoPonto WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FIAP.NoPonto.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		ACF9CA05254B7C1C00825C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "NoPonto WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FIAP.NoPonto.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		ACF9CA08254B7C1C00825C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = NoPonto_WatchKit_Extension;
+				INFOPLIST_FILE = "NoPonto WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = FIAP.NoPonto.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Debug;
+		};
+		ACF9CA09254B7C1C00825C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = NoPonto_WatchKit_Extension;
+				INFOPLIST_FILE = "NoPonto WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = FIAP.NoPonto.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.1;
+			};
+			name = Release;
+		};
+		ACF9CA0C254B7C1C00825C4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoPonto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FIAP.NoPonto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ACF9CA0D254B7C1C00825C4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = NoPonto/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FIAP.NoPonto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ACF9C9CD254B7C1400825C4D /* Build configuration list for PBXProject "NoPonto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF9CA01254B7C1C00825C4D /* Debug */,
+				ACF9CA02254B7C1C00825C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACF9CA03254B7C1C00825C4D /* Build configuration list for PBXNativeTarget "NoPonto WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF9CA04254B7C1C00825C4D /* Debug */,
+				ACF9CA05254B7C1C00825C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACF9CA07254B7C1C00825C4D /* Build configuration list for PBXNativeTarget "NoPonto WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF9CA08254B7C1C00825C4D /* Debug */,
+				ACF9CA09254B7C1C00825C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ACF9CA0B254B7C1C00825C4D /* Build configuration list for PBXNativeTarget "NoPonto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACF9CA0C254B7C1C00825C4D /* Debug */,
+				ACF9CA0D254B7C1C00825C4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ACF9C9CA254B7C1400825C4D /* Project object */;
+}

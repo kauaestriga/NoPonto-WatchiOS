@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch44"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="15501"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller spacing="10" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="NoPonto_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="fIf-Gg-uqv">
+                            <items>
+                                <timer alignment="center" id="9KA-gU-uYn">
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
+                                <button width="1" alignment="left" title="Iniciar Timer" id="dQK-pd-SIw">
+                                    <connections>
+                                        <action selector="toggleTimer" destination="AgC-eL-Hgc" id="kdS-OM-UZ2"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="Pbm-Mw-LnZ">
+                            <items>
+                                <label alignment="center" text="Total: 0.5 Kg" id="ruV-fh-vef"/>
+                                <group width="1" alignment="left" spacing="20" id="MxI-We-agh">
+                                    <items>
+                                        <button alignment="center" backgroundImage="minus" id="lIj-KN-YzE">
+                                            <connections>
+                                                <action selector="minus" destination="AgC-eL-Hgc" id="Qce-Hf-E4R"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="center" backgroundImage="plus" id="aLs-IP-MCt">
+                                            <connections>
+                                                <action selector="plus" destination="AgC-eL-Hgc" id="Umq-jy-AIQ"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <label alignment="center" text="Ponto da carne" id="0qj-EQ-ePy"/>
+                                <slider width="1" alignment="left" maximum="3" steps="3" id="Xwg-5Z-pMA">
+                                    <connections>
+                                        <action selector="onSliderChange:" destination="AgC-eL-Hgc" id="9bh-3L-WbR"/>
+                                    </connections>
+                                </slider>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="Hcj-q8-qwH">
+                            <items>
+                                <label alignment="center" text="Total (Kg)" id="dBC-Hc-tJK"/>
+                                <picker height="55" alignment="left" focusStyle="stack" id="oAo-pg-sGY">
+                                    <connections>
+                                        <action selector="onWeightPickerChange:" destination="AgC-eL-Hgc" id="Pdg-cp-kHl"/>
+                                    </connections>
+                                </picker>
+                                <label alignment="center" text="Ponto da carne" id="hW9-8T-6xw"/>
+                                <picker height="60" alignment="left" style="sequence" focusStyle="stack" id="buo-zT-fgI">
+                                    <connections>
+                                        <action selector="onTemperaturePickerChange:" destination="AgC-eL-Hgc" id="zQi-ei-rHT"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <switch width="1" alignment="left" title="Imagens" id="fx2-p7-roa">
+                            <connections>
+                                <action selector="onModeChange:" destination="AgC-eL-Hgc" id="3ho-aJ-TQK"/>
+                            </connections>
+                        </switch>
+                    </items>
+                    <connections>
+                        <outlet property="buttonTimer" destination="dQK-pd-SIw" id="pzi-A2-Fd1"/>
+                        <outlet property="groupImage" destination="Hcj-q8-qwH" id="ure-Bo-pKp"/>
+                        <outlet property="groupText" destination="Pbm-Mw-LnZ" id="tQQ-Bd-Ge4"/>
+                        <outlet property="labelCook" destination="0qj-EQ-ePy" id="xBt-8f-KoP"/>
+                        <outlet property="labelTemperture" destination="hW9-8T-6xw" id="QLG-wt-FTV"/>
+                        <outlet property="labelWeight" destination="ruV-fh-vef" id="cRb-f9-GeE"/>
+                        <outlet property="pickerTemperture" destination="buo-zT-fgI" id="UZa-3L-3c6"/>
+                        <outlet property="pickerWeight" destination="oAo-pg-sGY" id="k7L-uo-fGV"/>
+                        <outlet property="sliderCook" destination="Xwg-5Z-pMA" id="OLc-ZA-8lP"/>
+                        <outlet property="timer" destination="9KA-gU-uYn" id="aKV-0B-Jgt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="33" y="113"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="minus" width="40" height="40"/>
+        <image name="plus" width="40" height="40"/>
+    </resources>
+</document>
